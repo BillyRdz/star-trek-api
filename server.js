@@ -9,6 +9,7 @@ const connectionString =
 app.use(cors());
 app.use(express.json());
 
+// local 'database' prior to migrating to mongodb
 //prettier-ignore
 // const aliens = {
 //   'humans': {
@@ -36,12 +37,12 @@ app.use(express.json());
 //       'image': 'https://static.wikia.nocookie.net/aliens/images/7/74/Kruge.jpg'
 //   },
 //   'romulans': {
-// 'speciesName' : 'Romulans',
-// 'homeworld': "Romulus",
-// 'features':'Pointed ears, upward-curving eyebrows,green tinge to the skin, diagonal smooth forehead ridges (sometimes)',
-// 'interestingFact': 'Share a common ancestory with Vulcans, though none of the emotional discipline. Romulus has a sister planet, Remus, on which the Remans are seen as lesser beings.' ,
-// 'notableExamples' : "Pardek, Tal'aura, Narissa",
-// 'image': 'https://static.wikia.nocookie.net/aliens/images/1/1d/Zzzd7.jpg'
+//       'speciesName' : 'Romulans',
+//       'homeworld': "Romulus",
+//       'features':'Pointed ears, upward-curving eyebrows,green tinge to the skin, diagonal smooth forehead ridges (sometimes)',
+//       'interestingFact': 'Share a common ancestory with Vulcans, though none of the emotional discipline. Romulus has a sister planet, Remus, on which the Remans are seen as lesser beings.' ,
+//       'notableExamples' : "Pardek, Tal'aura, Narissa",
+//       'image': 'https://static.wikia.nocookie.net/aliens/images/1/1d/Zzzd7.jpg'
 //   },
 //   'borg' : {
 //       'speciesName' : '(The) Borg',
